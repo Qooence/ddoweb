@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="common_base(title,links,styles,scripts)">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title th:replace="${title}">title</title>
+    <link rel="shortcut icon" th:href="@{/favicon.ico}"/>
+    <link th:href="@{/plugins/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/plugins/bootstrap/css/font-awesome.css}" rel="stylesheet"/>
+    <link th:href="@{/css/animate.min.css}" rel="stylesheet"/>
+    <link th:href="@{/plugins/sweetalert/sweetalert.css}" rel="stylesheet"/>
+    <link th:href="@{/plugins/toastr/toastr.min.css}" rel="stylesheet"/>
+    <link th:href="@{/plugins/fontIconPicker/icomoon/style.css}" rel="stylesheet"/>
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+    <th:block th:replace="${links}"/>
+    <th:block th:replace="${styles}"/>
+    <script th:src="@{/plugins/jQuery/jQuery-2.2.0.min.js}"></script>
+    <script th:src="@{/plugins/bootstrap/js/bootstrap.min.js}" ></script>
+    <script th:src="@{/plugins/waves/waves.min.js}"></script>
+    <script th:src="@{/plugins/sweetalert/sweetalert.min.js}"></script>
+    <script th:src="@{/js/function.js}"></script>
+    <th:block th:replace="${scripts}"/>
+</head>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="common_header(title,links,styles,scripts)">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title th:replace="${title}">标题</title>
+    <link rel="shortcut icon" th:href="@{/favicon.ico}" href="/favicon.ico"/>
+    <link th:href="@{/plugins/bootstrap/css/bootstrap.min.css}" href="../static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link th:href="@{/plugins/bootstrap/css/font-awesome.css}" href="../static/plugins/bootstrap/css/font-awesome.css" rel="stylesheet"/>
+    <link th:href="@{/css/animate.min.css}" href="../static/css/animate.min.css" rel="stylesheet"/>
+    <link th:href="@{/plugins/sweetalert/sweetalert.css}" href="../static/plugins/sweetalert/sweetalert.css" rel="stylesheet"/>
+    <link th:href="@{/plugins/toastr/toastr.min.css}" href="../static/plugins/toastr/toastr.min.css" rel="stylesheet"/>
+    <link th:href="@{/plugins/fontIconPicker/icomoon/style.css}" href="../static/plugins/fontIconPicker/icomoon/style.css" rel="stylesheet"/>
+    <link th:href="@{/css/style.css}" href="../static/css/style.css" rel="stylesheet"/>
+    <th:block th:replace="${links}"/>
+    <th:block th:replace="${scripts}"/>
+    <th:block th:replace="${styles}"/>
+</head>
+
+<!--<script>-->
+<!--    var sys = sys || {};-->
+<!--    var swfUrl = "@{'/resources/plugins/uploadify/uploadify.swf')";-->
+<!--    var uploadUrl = "@{'/upload/imageUpload.shtml')"-->
+<!--    var imageOssUrl = "http://cdn.weiyoutongcheng.com/";-->
+<!--    var flash_swf_url = "@{'/resources/plugins/oss/lib/plupload-2.1.2/js/Moxie.swf')";-->
+<!--    var silverlight_xap_url = "@{'/resources/plugins/oss/lib/plupload-2.1.2/js/Moxie.xap')";-->
+<!--    var uptoken_url = "@{'/upload/generatorOssKey.shtml')";-->
+<!--    sys.pageNum = 10;-->
+<!--    var wxbEditor = {-->
+<!--        contentUploadPath: "/upload/ueditorUploadImage.shtml",-->
+<!--        store: null-->
+<!--    }-->
+<!--</script>-->
