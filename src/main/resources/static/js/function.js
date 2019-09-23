@@ -24,7 +24,6 @@ var TOOLS = {
         });
     },
     doPost: function (param, url, callFunc, errorFunc) {
-        console.log(param,url,callFunc,errorFunc)
         $.ajax({
             url: url,
             data: param,

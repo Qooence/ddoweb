@@ -21,3 +21,6 @@ dubbo:
       content-type: text/html
       cache: false  # 开发阶段务必关闭缓存 (=false)
 
+  security:
+    basic:
+      enabled: false
