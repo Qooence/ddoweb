@@ -12,15 +12,10 @@ dubbo:
 #  scan: cn.bounter
 
 # thymeleaf
-  spring:
-    thymeleaf:
-      prefix: classpath:/templates/
-      suffix: .html
-      mode: HTML
-      encoding: UTF-8
-      content-type: text/html
-      cache: false  # 开发阶段务必关闭缓存 (=false)
-
-  security:
-    basic:
-      enabled: false
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+    cache: false  # 开发阶段务必关闭缓存 (=false)
